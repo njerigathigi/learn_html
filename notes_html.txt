@@ -1,0 +1,69 @@
+-Hyper Text Markup Language
+-NOT a programming Language
+-Markup language for creating webpages/documents -used to display and format elements of a
+-webpage.its strictly presentational(no logic/ actual programming).
+-Building blocks of the web - html is the building block of the web.
+
+-html does not need a server
+-file must end with .html file extension
+-runs in we browser(chrome,safari, etc)
+-index.html is the root / home page of a website
+
+Tag syntax
+<tagname>content</tagname>
+-element name surrounded by angle brackets.
+-Normally come in pairs(start tag and end tag)
+-End tag is usually the same but with forward slash
+<h1>About us</h1>
+<p>This is a paragraph</p>
+-some tags close themselves(Remnant of XHTML)
+<br/> (self closing) -dont have any content within them.
+-br is a line break tag. 
+<br> (Fine in HTML5)
+-use ctrl + u to see the exact source code running in the browser(or being parsed in the browser)
+-use ctrl + shift + i to get the developer tools.
+<!-- comment --> to include comments.They are ignored/not parsed by the browser.
+-html has upto 6 headings(h1,h2,h3,h4,h5,h6)
+-decrease in size ie h1 is bigger than h2.
+
+inline elements
+- do not start on a a new line.
+-take only the necessary width.
+<span>, <img>,<a>, <strong>(bold), <em>(italics)
+
+block elements
+-start on a new line.
+-take full width available.
+<div>, <h1>, <h6>, <p>, <form>. 
+
+tag attributes
+<tagname attributename = "attributevalue"> content</tagname>
+-All tags can have attributes.
+-Provide information about an element.
+-Placed within the start tag.
+-key/value pairs(id = "someid")
+<h1 title = "My Company">About us</h1>
+
+<!DOCTYPE html>
+-declaration of what version of html you're using.(tells browser which version you're using)
+<html>  (begins here)
+    <head>     
+        <title>content>/title>  
+    </head>
+    <body>
+    <h1>Heading one>/h2>
+
+    </body>
+
+</html> (ends here)
+
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
