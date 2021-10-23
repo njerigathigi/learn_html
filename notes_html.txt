@@ -1,0 +1,215 @@
+-Hyper Text Markup Language
+-NOT a programming Language
+-Markup language for creating webpages/documents 
+-used to display and format elements of a webpage.its strictly presentational(no logic/ actual programming).
+-Building blocks of the web ie html is the building block of the web.
+
+-html does not need a server
+-file must end with .html file extension
+-runs in the browser(chrome,safari, etc)
+-index.html is the root / home page of a website
+
+Tag syntax
+<tagname>content</tagname>
+-element name surrounded by angle brackets.
+-Normally come in pairs(start tag and end tag)
+-End tag is usually the same but with forward slash
+<h1>About us</h1>
+<p>This is a paragraph</p>
+-some tags close themselves(Remnant of XHTML)
+<br/> (self closing) ie dont have any content within them.
+-br is a line break tag. 
+<br> (Fine in HTML5)
+-use ctrl + u to see the exact source code running in the browser(or being parsed in the browser)
+-use ctrl + shift + i to get the developer tools.
+<!-- comment --> to include comments.They are ignored/not parsed by the browser.
+-html has upto 6 headings(h1,h2,h3,h4,h5,h6)
+-decrease in size ie h1 is bigger than h2.
+
+inline elements
+- do not start on a a new line.
+-take only the necessary width.
+<span>, <img>,<a>, <strong>(bold), <em>(italics)
+
+block elements
+-start on a new line.
+-take full width available.
+<div>, <h1>, <h6>, <p>, <form>. 
+
+tag attributes
+<tagname attributename = "attributevalue"> content</tagname>
+-All tags can have attributes.
+-Provide information about an element.
+-Placed within the start tag.
+-name/value pairs(id = "someid")
+<h1 title = "My Company">About us</h1>
+-The href attribute of <a> specifies the URL of the page the link goes to
+-The src attribute of <img> specifies the path to the image to be displayed
+-The width and height attributes of <img> provide size information for images
+-The alt attribute of <img> provides an alternate text for an image
+-The style attribute is used to add styles to an element, such as color, font, size, and more
+  syntax is style="attribute:attribute value;"
+  background-color for background color
+  color for text colors
+  font-family for text fonts
+  font-size for text sizes
+  text-align for text alignment(horizontal)
+-The lang attribute of the <html> tag declares the language of the Web page
+-The title attribute defines some extra information about an element
+
+<!DOCTYPE html>
+-declaration of what version of html you're using.(tells browser which version you're using)
+<html>  (begins here)
+    <head>     
+        <title>content>/title>  
+    </head>
+    <body>
+    <h1>Heading one>/h2>
+
+    </body>
+
+</html> (ends here)
+
+HTML formatting
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+
+HTML Quotations.
+-<blockquote> element defines a section that is quoted from another source.
+Browsers usually indent <blockquote> elements.
+-<q> tag defines a short quotation.
+Browsers normally insert quotation marks around the quotation.
+-<abbr> tag defines an abbreviation or an acronym
+Use the global title attribute to show the description for the abbreviation/acronym
+-<address> tag defines the contact information for the author/owner of a document or an article
+The text in the <address> element usually renders in italic, and browsers will 
+always add a line break before and after the <address> element.
+-<cite> tag defines the title of a creative work 
+The text in the <cite> element usually renders in italic.
+A person's name is not the title of a work.
+-<bdo> tag is used to override the current text direction: dir="rtl"/"ltr"
+BDO stands for Bi-Directional Override.
+
+HTML comments.
+-You can add comments to your HTML source by using the following syntax:
+<!-- Write your comments here -->
+-they can help document your HTML source code.
+-also great for debugging HTML
+
+HTML colors
+-HTML colors are specified with predefined color names
+-You can set the background color for HTML elements:
+ie <h1 style="background-color:Tomato;"> hello world!</h1>
+-You can set the  color of HTML text:
+<h1 style="color:DodgerBlue;"> Hello world!</h1>
+-You can set the color of borders:
+<h1 style="border:2px Solid Tomato;"> Hello world!</h1>
+  RGB
+-An RGB color value represents RED, GREEN, and BLUE light sources.
+-rgb(red, green, blue)
+-Each parameter (red, green, and blue) defines the intensity of the color with a value between 0 and 255.
+  RGBA
+-are RGB color values with an Alpha channel(specifies opacity for color)
+-rgba(red, green, blue, alpha)
+- The apha parameter is a number between 0.0(fully transparent) and 1.0(not transparent at all):
+  HEX
+-A hexadecimal color is specified with: #RRGGBB
+-Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255)
+  HSL
+-HSL stands for hue, saturation and lightness.
+-HSLA color values are an extension of HSL with an Alpha channel(opacity)
+hsl(hue, saturation, lightness)
+-Hue is a degree on the color wheel from 0 to 360.
+-Saturation is a percentage value.
+-Lightness is also a percentage value.
+-Saturation can be described as the intensity of a color
+-The lightness of a color can be described as how much light you want to give 
+the color, where 0% means no light (black), 50% means 50% light (neither dark 
+nor light) 100% means full lightness (white).
+-hsla(hue, saturation, lightness, alpha)
+
+HTML CSS
+-CSS stands for Cascading Style Sheets
+-Cascading Style Sheets (CSS) is used to format the layout of a webpage.
+-The word cascading means that a style applied to a parent element will also 
+apply to all children elements within the parent. (unless you specify something else)!
+-CSS can be added to HTML documents in 3 ways:
+Inline - by using the style attribute inside HTML elements
+Internal - by using a <style> element in the <head> section
+External - by using a <link> element to link to an external CSS file
+-An inline CSS is used to apply a unique style to a single HTML element.
+ An inline CSS uses the style attribute of an HTML element.
+-An internal CSS is used to define a style for a single HTML page.
+-An internal CSS is defined in the <head> section of an HTML page,
+within a <style> element.
+-An external style sheet is used to define the style for many HTML pages.
+-To use an external style sheet, add a link to it in the <head> section of each HTML page:
+-The file must not contain any HTML code, and must be saved with a .css extension
+- With an external style sheet, you can change the look of an entire web site, by changing one file!
+    css colors, fonts and sizes 
+-The CSS color property defines the text color to be used
+-The CSS font-family property defines the font to be used.
+-The CSS font-size property defines the text size to be used.
+    css border
+-The CSS border property defines a border around an HTML element.
+-You can define a border for nearly all HTML elements.
+border:2px solid powderblue;
+    css padding
+-The CSS padding property defines a padding (space) between the text and the border.
+    css margin
+-The CSS margin property defines a margin (space) outside the border.(up,down,left and right)
+    Link to external css
+-<link>	Defines a link between a document and an external resource
+-External style sheets can be referenced with a full URL or with a path relative to the current web page.
+<link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+<link rel="stylesheet" href="/html/styles.css">
+<link rel="stylesheet" href="styles.css">
+
+
+HTML classes
+-The HTML class attribute is used to specify a class for an HTML element.
+-Multiple HTML elements can share the same class.
+-The class attribute is often used to point to a class name in a style sheet.
+-The class attribute can be used on any HTML element.
+-The class name is case sensitive!
+-To create a class; write a period (.) character, followed by a class name. 
+Then, define the CSS properties within curly braces {}.
+-HTML elements can belong to more than one class.
+-To define multiple classes, separate the class names with a space, 
+e.g. <div class="city main">. 
+The element will be styled according to all the classes specified.
+-Different HTML elements can point to the same class name
+
+HTML id
+-The HTML id attribute is used to specify a unique id for an HTML element.
+-You cannot have more than one element with the same id in an HTML document. The 
+value of the id attribute must be unique within the HTML document.
+-The id attribute is used to point to a specific style declaration in a style sheet.
+-The syntax for id is: write a hash character (#), followed by an id name. 
+Then, define the CSS properties within curly braces {}.
+-The id name is case sensitive
+-The id name must contain at least one character, cannot start with a number, 
+and must not contain whitespaces (spaces, tabs, etc.).
+
+HTML <div>
+-The <div> tag defines a division or a section in an HTML document
+-The <div> tag is used as a container for HTML elements - which is then 
+styled with CSS.
+-The <div> tag is easily styled by using the class or id attribute.
+-By default, browsers always place a line break before and after the <div> element.
+
+HTML <span>
+-The <span> tag is an inline container used to mark up a part of a text, 
+or a part of a document.
+-The <span> tag is much like the <div> element, but <div> is a block-level 
+element and <span> is an inline element.
+-The <span> tag is easily styled by CSS or manipulated  using the class or id attribute.
+-Any sort of content can be put inside the <div> tag! 

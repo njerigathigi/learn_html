@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*add a background color to the top navigation */
+.topnav{
+    background-color:rgba(247, 222, 216, 0.5);
+    overflow:hidden;
+}
+
+/* style the links inside the navigation bar */
+.topnav a {
+    float:left;
+    color:rgb(8, 0, 15);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:17px;
+}
+
+/* change the color of the links on hover */
+.topnav a:hover {
+    /*background-color:rgba(214, 164, 197, 0.3);*/
+    color:rgba(103, 72, 122);
+    font-weight:bolder;
+}
+
+/* add color to the active/current link */
+.topnav a.active {
+    background-color:rgb(189, 128, 197);
+    color:rgb(8, 0, 15);
+    font-family: 'Caveat', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Festive', cursive;
+    font-family: 'Kalam', cursive;
+    font-weight: bolder;
+}
+
+#login {
+    margin-left: 88%;
+} 
