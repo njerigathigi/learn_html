@@ -7,12 +7,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Dancing+Script&family=Festive&family=Kalam:wght@300&family=Zen+Kurenaido&display=swap" rel="stylesheet">
         <style>
             .nav{
-                background-color:rgba(195, 216, 250, 0.5);
+                background-color:rgba(0, 0, 0, 0.28);
                 overflow: hidden;
                 height:40px;
-                padding-top:10px;
                 padding-bottom:0px;
-                padding-left:10px;
                 padding-right:10px;
                 font-family: 'Caveat', cursive;
                 font-family: 'Dancing Script', cursive;
@@ -25,18 +23,32 @@
                 text-decoration: none;
             }
             .nav a:hover{
-                color:gray;
-                font-weight:bold;
+                color:whitesmoke;
+                font-weight:bolder;
+                font-size: large;
             }
+            .container{
+                width:40px;
+                height:100px;
+                background-color: rgba(169, 255, 251, 0.747);
+                text-align: center;
+                display: inline-block;
+                padding:10px;
+                padding-bottom: 0;
+            }
+            
             #position{
                 float:right;
+                width:20px;
             }
             
         </style>
     </head> 
     <body>
         <nav class="nav">
-              <a href="#">Home</a>
+            <div class="container">
+                <a class="active" href="#">Home</a>
+            </div>
             <div id="position">
                 <a style="padding-right:10px;" href="#">Login</a>
                 <a href="#">About</a>
