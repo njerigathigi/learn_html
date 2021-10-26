@@ -8,7 +8,7 @@
         <style>
             .nav{
                 background-color:rgba(0, 0, 0, 0.28);
-                overflow: hidden;
+                overflow:hidden;
                 height:40px;
                 padding-bottom:0px;
                 padding-right:10px;
@@ -27,6 +27,9 @@
                 font-weight:bolder;
                 font-size: large;
             }
+            .nav a.active{
+                font-weight: bolder;
+            }
             .container{
                 width:40px;
                 height:100px;
@@ -36,23 +39,20 @@
                 padding:10px;
                 padding-bottom: 0;
             }
-            
-            #position{
+            .position{
                 float:right;
-                width:20px;
+                padding-right:10px;
+                padding-top:10px;
             }
-            
         </style>
     </head> 
     <body>
         <nav class="nav">
-            <div class="container">
+            <div class="container active">
                 <a class="active" href="#">Home</a>
             </div>
-            <div id="position">
-                <a style="padding-right:10px;" href="#">Login</a>
-                <a href="#">About</a>
-            </div>
+            <a class="position", href="#">Login</a>
+            <a class="position", href="#">About</a>
         </nav>
     </body> 
 </html>
